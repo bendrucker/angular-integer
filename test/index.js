@@ -17,6 +17,12 @@ describe('angular-integer', function () {
     expect(controller.$valid).to.be.true;
   });
 
+  it('accepts a negative integer', function () {
+    scope.int = -1;
+    scope.$digest();
+    expect(controller.$valid).to.be.true;
+  });
+
   it('rejects a non-integer', function () {
     scope.int = 1.1;
     scope.$digest();
