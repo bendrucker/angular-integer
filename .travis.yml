@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- '0.10'
+deploy:
+  provider: npm
+  email: bvdrucker@gmail.com
+  api_key:
+    secure: Wb+Pfsu2yt2doFFx1TpJ982m6joG/YMy8796FJ6swDWCS4dhjuree63L5e0Il/hM5QjUk7Nlg1Kr9F8YszUhVoABYra8Ui7TgdrBbDyAfzUfBxq2j91UCE1Nx0lL6jeaGxJJMgRNGlYIfJ6dkvKn/pn98D87as8T8DDBHBz+pVs=
+  on:
+    tags: true
+    all_branches: true
+    repo: bendrucker/angular-integer
